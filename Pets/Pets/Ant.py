@@ -3,7 +3,7 @@ import IPet
 
 class Ant(IPet):
     def __init__(self):
-        self.stats = {"hlth": 2, "dmg": 2}
+        self.stats = {"hlth": 2, "dmg": 1}
 
     # operator is going to contain the shop, team and board.
 
