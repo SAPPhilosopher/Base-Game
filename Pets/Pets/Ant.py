@@ -3,14 +3,14 @@ import IPet
 
 class Ant(IPet):
     def __init__(self):
-        self.stats = [2, 1]
+        self.stats = {"hlth": 2, "dmg": 2}
 
     # operator is going to contain the shop, team and board.
 
     def modify_stats(self, dmg_ant, hlth_amnt, is_perm):
         if is_perm:
-            self.stats[0] += dmg_ant
-            self.stats[1] += hlth_amnt
+            self.stats["dmg"] += dmg_ant
+            self.stats["hlth"] += hlth_amnt
         else:
             pass
             # need to figure out some routine for temporary stats
